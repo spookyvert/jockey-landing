@@ -13,17 +13,15 @@ body {
 body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
-.container-2 {
-            padding-left: 25% !important;
-    }
+
 a {
-  color: #072ded;
+  color: #fdcc52;
   -webkit-transition: all .35s;
   transition: all .35s;
 }
 
 a:hover, a:focus {
-  color: #7b4397;
+  color: #fcbd20;
 }
 
 hr {
@@ -43,8 +41,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins','sans-serif';
-  
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
   letter-spacing: 1px;
 }
 
@@ -63,24 +61,24 @@ section h2 {
 }
 
 #mainNav {
-  border-color: black;
-  background-color: black;
+  border-color: rgba(34, 34, 34, 0.05);
+  background-color: white;
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
-  color: #A1A1A1;
-  font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
+  color: #fdcc52;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #072ded;
+  color: #fcbd20;
 }
 
 #mainNav .navbar-toggler {
@@ -97,7 +95,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #001CFF !important;
+  color: #fdcc52 !important;
   background-color: transparent;
 }
 
@@ -107,18 +105,18 @@ section h2 {
 
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
-  color: #A1A1A1;
+  color: #222222;
 }
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: white;
+  color: #fdcc52;
 }
 
 @media (min-width: 992px) {
   #mainNav {
-    border-color: black;
-    background-color: black;
+    border-color: transparent;
+    background-color: transparent;
   }
   #mainNav .navbar-brand {
     color: fade(white, 70%);
@@ -136,21 +134,21 @@ section h2 {
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
-    background-color: #21242B;
+    background-color: white;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #A1A1A1;
+    color: #222222;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #21242B;
+    color: #fdcc52;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-    color: #A1A1A1;
+    color: #222222;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #21242B;
+    color: #fdcc52;
   }
 }
 
@@ -160,12 +158,9 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/background.png") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
+  background: url("../img/bg-pattern.png"), #7b4397;
+  background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
 }
 
 header.masthead .header-content {
@@ -245,11 +240,8 @@ section.download .badges .badge-link img {
 
 section.features .section-heading {
   margin-bottom: 100px;
+}
 
-}
-.section-heading{
-  color: #A1A1A1;
-}
 section.features .section-heading h2 {
   margin-top: 0;
 }
@@ -362,7 +354,7 @@ section.contact ul.list-social li.social-twitter a {
 }
 
 section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #7b4397;
+  background-color: #0d95e8;
 }
 
 section.contact ul.list-social li.social-facebook a {
@@ -370,7 +362,7 @@ section.contact ul.list-social li.social-facebook a {
 }
 
 section.contact ul.list-social li.social-facebook a:hover {
-  background-color: #7b4397;
+  background-color: #344e86;
 }
 
 section.contact ul.list-social li.social-google-plus a {
@@ -378,7 +370,7 @@ section.contact ul.list-social li.social-google-plus a {
 }
 
 section.contact ul.list-social li.social-google-plus a:hover {
-  background-color: #7b4397;
+  background-color: #d73925;
 }
 
 footer {
@@ -407,9 +399,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #21242B;
-  background: -webkit-gradient(linear, left top, left bottom, from(#21242B), to(#21242B));
-  background: linear-gradient(#21242B, #21242B);
+  background: #fdcc52;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdcc52), to(#fdc539));
+  background: linear-gradient(#fdcc52, #fdc539);
 }
 
 .text-primary {
